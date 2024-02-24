@@ -1,3 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+:root{
+  --pink : #da4cc0;
+  --yellow: #fff23f;
+  --violet : #4569eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Small screens (phones, less than 600px) */
+@media (max-width: 599px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Medium screens (tablets, 600px and up) */
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Large screens (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,29 @@
+.footer-container{
+    margin: 0;
+    background-color: black;
+    padding: 18px;
+}
+
+.text{
+    color: white;
+    text-align: center;
+}
+
+.heart-icon{
+    color:red;
+
+}
+.name-text{
+    color: var(--yellow);
+    font-size: 45px;
+}
+
+@media (max-width: 659px){
+    .text{
+        font-size: 17px;    
+    }
+    .name-text{
+        font-size: 30px;
+        color: var(--yellow);
+    }
+}

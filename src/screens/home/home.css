@@ -1,0 +1,237 @@
+.container {
+  height: 85vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #000;
+}
+.footer-container {
+  background-color: black;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.heart-icon {
+  color: red;
+}
+.name-text {
+  color: var(--yellow);
+  font-size: 35px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 6px solid yellow; */
+  text-align: center;
+  color: #fff;
+}
+
+.greeting {
+  font-size: 35px;
+}
+.hi {
+  color: var(--pink);
+}
+.name {
+  font-size: 35px;
+}
+
+.highlight {
+  color: var(--yellow);
+  font-size: 90px;
+}
+
+.interest {
+  font-size: 30px;
+}
+
+.highlight-blue {
+  color: var(--violet);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.image-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border-top: 6px dashed #ffcc00;
+  border-right: 6px dashed #ffcc00;
+  border-left: 6px dashed #ff0000;
+  border-bottom: 6px dashed #ff0000;
+  padding: 15px;
+  animation: spin 10s infinite linear;
+}
+.image-circle img {
+  animation: spin 10s infinite reverse linear;
+  width: 100%;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* small screens */
+@media (max-width: 659px) {
+  .footer-container {
+    height: 10vh;
+    background-color: black;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .name-text {
+    font-size: 40px;
+    color: var(--yellow);
+  }
+  .container {
+    display: block;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .content {
+    height: 40%;
+    display: flex;
+    justify-content: none;
+    align-items: normal;
+    /* border: 5px solid yellow; */
+  }
+
+  .greeting {
+    font-size: 60px;
+  }
+  .hi {
+    color: var(--pink);
+  }
+  .name {
+    font-size: 65px;
+  }
+
+  .highlight {
+    color: var(--yellow);
+    font-size: 90px;
+  }
+
+  .interest {
+    font-size: 42px;
+  }
+
+  .highlight-blue {
+    color: var(--violet);
+  }
+
+  .image-container {
+    display: block;
+    padding-left: 18%;
+    height: 50%;
+    width: 100%; /* Set a width for the div */
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto;
+  }
+
+  .image-circle {
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    border-top: 6px dashed #ffcc00;
+    border-right: 6px dashed #ffcc00;
+    border-left: 6px dashed #ff0000;
+    border-bottom: 6px dashed #ff0000;
+    padding: 15px;
+    animation: spin 10s infinite linear;
+  }
+  .image-circle img {
+    animation: spin 10s infinite reverse linear;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+/* Medium screens (tablets, 600px and up) */
+@media (min-width: 660px) and (max-width: 991px) {
+  .footer-container {
+    height: 10vh;
+    background-color: black;
+  }
+  .container {
+    display: block;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .content {
+    height: 40%;
+    display: flex;
+    justify-content: none;
+    align-items: normal;
+    /* border: 5px solid yellow; */
+  }
+
+  .greeting {
+    font-size: 70px;
+  }
+  .hi {
+    color: var(--pink);
+  }
+  .name {
+    font-size: 35px;
+  }
+
+  .highlight {
+    color: var(--yellow);
+    font-size: 90px;
+  }
+
+  .interest {
+    font-size: 30px;
+  }
+
+  .highlight-blue {
+    color: var(--violet);
+  }
+
+  .image-container {
+    height: 50%;
+    width: 100%; /* Set a width for the div */
+    margin-left: auto; /* Set left margin to auto */
+    margin-right: auto;
+  }
+
+  .image-circle {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border-top: 6px dashed #ffcc00;
+    border-right: 6px dashed #ffcc00;
+    border-left: 6px dashed #ff0000;
+    border-bottom: 6px dashed #ff0000;
+    padding: 15px;
+    animation: spin 10s infinite linear;
+  }
+  .image-circle img {
+    animation: spin 10s infinite reverse linear;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+/* Large screens (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}

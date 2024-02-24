@@ -1,3 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: black;
+}
+.nav-logo{
+    font-size: 45px;
+    color: white;
+}
+.nav-logo-left{
+    color: var(--violet);
+}
+.nav-logo-right{
+    color: var(--pink);
+}
+.navbar-list{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    list-style: none;
+}
+
+.nav-text{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.nav-code{
+    color: #a6a6a6;
+}
