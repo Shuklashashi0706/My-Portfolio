@@ -29,3 +29,31 @@
 .nav-code{
     color: #a6a6a6;
 }
+/* small screens */
+@media (max-width: 659px) {
+    .nav-logo{
+        font-size: 35px;
+        color: white;
+    }
+    .navbar-list{
+        display: none;
+    }
+}
+
+/* Medium screens (tablets, 660px and up) */
+@media (min-width: 660px) and (max-width: 991px) {
+    .nav-logo{
+        font-size: 60px;
+        color: white;
+    }
+    .navbar-list{
+        border: 1px solid white;
+    }
+    .nav-text{
+        font-size: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* Large screens (desktops, 992px and up) */
+@media (min-width: 992px) {}

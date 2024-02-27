@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./skillcard.css"
 const Skill = (props) => {
   return (
     <>
-      <div className=" text-center  w-[200px] m-3">
-        <img className="w-[200px] p-3" src={props.img} alt="" />
-        <p>{props.title}</p>
+      <div className="skill-main-container">
+        <img className="skill-card-image" src={props.img} alt="" />
+        <p className="skill-card-text">{props.title}</p>
       </div>
     </>
   );

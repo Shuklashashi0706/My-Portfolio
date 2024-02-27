@@ -1,28 +1,77 @@
 import React from "react";
-
+import "./contact.css";
+import { Link } from "react-router-dom";
 const contact = () => {
   return (
     <>
-      <div className="h-[590px] bg-black">
-        <div className="text-white text-center h-full flex flex-col justify-center items-center">
-          <h1 className="text-[70px]">
-            Contact <span className="text-[#da4cc0]">Me</span>
+      <navbar className="navbar-container ">
+      <Link style={{ color: "white", textDecoration: "none" }} to="/">
+        <code className="nav-logo">
+          <span className="nav-logo-left">&lt;</span>Shashi
+          <span className="nav-logo-right ">/&gt;</span>
+        </code>
+        </Link>
+        <ul className="navbar-list">
+          <li className="nav-text ">
+            <Link style={{ color: "white", textDecoration: "none" }} to="/">
+              About me <span className="nav-code text-[#a6a6a6]">/&gt;</span>{" "}
+            </Link>
+          </li>
+          <li className="nav-text ">
+            <Link
+              style={{ color: "white", textDecoration: "none" }}
+              to="/skill"
+            >
+              Skills<span className="nav-code text-[#a6a6a6]">/&gt;</span>
+            </Link>
+          </li>
+          <li className="nav-text">
+            <Link
+              style={{ color: "white", textDecoration: "none" }}
+              to="/contact"
+            >
+              Contact me<span className="nav-code text-[#a6a6a6]">/&gt;</span>
+            </Link>
+          </li>
+        </ul>
+      </navbar>
+      <div className="contact-main-container">
+        <div className="contact-container ">
+          <h1 className="contact-heading ">
+            Contact <span style={{ color: "#da4cc0" }}>Me</span>
           </h1>
-          <form className="h-[500px] w-[800px] text-3xl flex flex-col items-center">
-            <p className="text-[80px] mb-[60px] mt-[50px]">Say,</p>
+          <form className="contact-form ">
+            <p className="contact-form-para">Say,</p>
             <ul>
-              <li className="mb-[40px]">
-                <span> <span className="text-[#4569eb]">Your</span> Name</span>
-                <input className="text-black ml-3 rounded-[2.5px] " type="text" /> <br />
+              <li className="contact-form-list">
+                <span>
+                  {" "}
+                  <span style={{color:"#4569eb"}} >Your</span> Name
+                </span>
+                <input
+                  className=" contact-form-input"
+                  type="text"
+                />{" "}
+                <br />
               </li>
-              <li className="mb-[40px]">
-                <span>Your <span className="text-[#4569eb]">email</span></span>
-                <input className="text-black ml-3 rounded-[2.5px]" type="email" name="" id="" />
+              <li className="contact-form-list">
+                <span>
+                  Your <span style={{color:"#4569eb"}}>email</span>
+                </span>
+                <input
+                  className=" contact-form-input"
+                  type="email"
+                  name=""
+                  id=""
+                />
               </li>
             </ul>
-            <button className="bg-[#f6ff4a] text-black w-[17%] rounded-[2.5px] " type="submit">
+            <button
+              className="contact-form-button"
+              type="submit"
+            >
               Send Me
-            </button> 
+            </button>
           </form>
         </div>
       </div>

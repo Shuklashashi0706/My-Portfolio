@@ -10,7 +10,6 @@ const Contact = lazy(()=>import("./screens/contact/contact"))
 const App = () => {
   return (
     <>
-      <Navbar />
       <Suspense fallback={<Loader/>}>
       <Routes>
         <Route path="/" element={<Home />} />
